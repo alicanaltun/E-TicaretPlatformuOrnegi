@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s ease;
+    font-family: 'Poppins';
+}
+
+* html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #0a1218;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.1rem;
+    margin: 0.3rem;
+}
+
+.nav-link:hover {
+    color: #CF7650;
+}
+
+.navbar {
+    z-index: 999;
+}
+
+.search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1.8rem;
+    background-color: whitesmoke;
+    width: 750px;
+    height: 2.8rem;
+    margin: 0 3rem;
+    transition: box-shadow 0.25s;
+}
+
+.search:focus-within {
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.75);
+}
+
+.search-input {
+    font-size: 1rem;
+    font-family: 'Lexend', sans-serif;
+    color: rgb(51, 51, 51);
+    margin-left: 1rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+    flex: 1;
+}
+
+.search-input::placeholder,
+.search-icon {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.circle {
+    position: absolute;
+    top: -15px;
+    left: 5px;
+    display: inline-table;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    
+  }
+  
+  .circle__content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+    margin-left: 1.8rem;
+}
+
+.cart-icon a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.cart-icon a span {
+    color: #fff;
+    margin-right: 5px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+section {
+    display: inline-block;
+    padding: 0 9%;
+}
+
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #162836;
+    height: 65px;
+    padding: 5px 9%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+
+footer .footer-left,
+footer .footer-center,
+footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer .footer-left {
+  width: 33%;
+  margin-top: 16px;
+}
+
+footer .footer-center {
+    text-align: center;
+    vertical-align: center;
+    width: 33%;
+    margin-top: 16px;
+}
+
+footer .footer-right {
+  width: 33%;
+}
+
+footer img {
+  max-width: 100%; 
+}
+
+footer span {
+  color: #bdb6b6d7;
+}
+
+footer b {
+  color: whitesmoke;
+}
+
+.thumbnails{
+    margin-top: 20px;
+    width: 1030px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+
+.name{
+    color: #fff;
+    display: inline-block;
+}
+
+.content{
+    width: 1024px;
+    height: 576px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.thumbnail-area{
+    width: 1024px;
+    position: relative; /**/
+}
+
+.short-thumbnails{
+    width: 1060px;
+}
+
+
+.short-thumbnails img {
+    border-radius: 10px;
+    margin: 15px 14px 20px 0;
+    border: 1px solid transparent; /* Add a 1px transparent border to all thumbnails */
+    cursor: pointer;
+}
+
+.short-thumbnails img:hover{
+    border: 1px solid #fff;
+    transition: all 800ms;
+    
+}
+
+/**/
+.img-t,
+video {
+    transition: opacity 0.5s ease-in-out; /* Add a transition effect for opacity */
+}
+
+.img-t {
+    opacity: 0;
+    width: 1024px;
+    height: 576px;
+}
+
+.img-t.active,
+video.active {
+    opacity: 1;
+}
+
+/*---------------------------*/
+.gamebar{
+    position: relative; 
+    padding: 35px 60px 0 60px;   
+    width: 450px;
+    height: 774px;
+    margin-top: 35px;
+    overflow: hidden;
+    float: right;
+    border-left: 2px solid #bdb6b6d7;
+}
+
+.logo{
+    width: 320px;
+    height: 80px;
+    justify-content: center;
+}
+
+.score{
+    width: 320px;
+    height: 175px;
+    margin: 30px 0 30px 0;
+    border: 2px solid #bdb6b6d7;
+    border-radius: 8px;
+}
+
+.pegi{
+    position: relative;
+    width: 65px;
+    height: 80px;
+    margin: 10px;
+    float: left;
+}
+
+.score p{
+    display: inline-block;
+    overflow: hidden;
+    width: 230px;
+    margin: 10px 0 0 0;
+    color: #fff;
+}
+
+.metacritic{
+    width: 320px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+
+.metascore{
+    position: relative;
+    width: 65px;
+    height: 65px;
+    margin: 10px;
+    border-radius: 8px;
+
+    text-align: center;
+    padding-top: 15px;
+}
+
+.point{
+    font-weight: 600;
+    font-size: 28px;
+    color:#fff;
+}
+
+.metacriticlogo{
+    width: 200px;
+    height: 45px;
+    margin-left: 10px;
+}
+
+.gamebar a{
+    text-decoration: none;
+}
+
+.platforms{
+    width: 320px;
+    text-align: center;
+}
+
+.platforms p{
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    width: 220px;
+    border-bottom: 2px solid #fff ;
+    padding-bottom: 5px;
+}
+
+
+.platforms img{
+    width: 200px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.platforms input:disabled + label img {
+    cursor: default;
+}
+
+input[type='radio']{
+    accent-color: #bb562b;
+}
+
+.purchase{
+    width: 328px;
+    height: 176px;
+    
+}
+
+.purchase button{
+    width: 320px;
+    height: 46px;
+    margin-left: 4px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.sale{
+    position: absolute;
+    display: block;
+    right: 0;
+    margin-right: 69px;
+    padding-top: 5px;
+    font-size: 17px;
+    color: #bdb6b6d7;
+    text-decoration: line-through;
+}
+
+.price{
+    position: absolute;
+    display: inline-block;
+    margin-right: 65px;
+    padding-top: 19px;
+    right: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.game{
+    position: relative;
+    width: 1575px;
+    height: 810px;
+}
+
+
+.description-box{
+    position: relative;
+    width: 1030px;
+    font-size: 15px;
+    line-height: 24px;
+    color: whitesmoke;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 40px;
+}
+
+.description{
+    color: whitesmoke;
+    margin-top:20px;
+    font-weight: 500;
+    font-size: 16px;
+    border-bottom: 1px solid #bdb6b6d7;
+    padding-bottom: 8px;
+}
+
+.info-box{
+    position: relative;
+    width: 435px;
+    float: right;
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+.info-box b{
+    color: #bdb6b6d7;  
+}
+
+.info-box span{
+    color: whitesmoke;
+}
+
+
+
