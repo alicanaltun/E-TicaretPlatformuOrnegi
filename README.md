@@ -11,6 +11,8 @@ Bu proje, oyunseverlerin farklı platformlarda bulunan dijital video oyunların�
 
 ![Resim Açıklaması](https://github.com/alicanaltun/E-TicaretPlatformuOrnegi/blob/main/screenshot.png?raw=true)
 
+![Resim Açıklaması](https://github.com/alicanaltun/E-TicaretPlatformuOrnegi/blob/main/screenshot2.png?raw=true)
+
 ## Özellikler
 
 - Erişim ve yetki sınırlandırmaları sahip bir altyapı bulunmaktadır.
