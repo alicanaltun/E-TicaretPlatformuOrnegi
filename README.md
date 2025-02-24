@@ -69,7 +69,7 @@ Bu proje, oyunseverlerin farklı platformlarda bulunan dijital video oyunların�
 
 ## Katkıda Bulunma
 
-Çalışan ve yönetici sayfaları geliştirme aşamasındadır. Katkıda bulunmak isterseniz, lütfen bir **pull request** gönderin veya bir **issue** açın.
+Katkıda bulunmak isterseniz, lütfen bir **pull request** gönderin veya bir **issue** açın.
 
 ## Lisans
 
